@@ -132,12 +132,6 @@ section{
     gap: 5rem;
     height: 80vh;
 }
-.profile_pic-container{
-    display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;      
-}
 .section__text{
     text-align: center;
     align-self: center;
@@ -230,11 +224,10 @@ section{
     align-items: center;
 }
 
-.about-pic {
-    border-radius: 2rem;
-    height: 100%;
-    width: 100%;
-    margin-top: -60px;
+.about-icon{
+    height: 3rem;
+    cursor: default;
+    width: 3rem;
 }
 
 .arrow{
@@ -244,36 +237,52 @@ section{
 }
 
 .details-container{
+    display: flex;
     padding: 1.5rem;
+    flex-direction: row;
     flex: 1;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163,163,163);
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
+.details-container{
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: row;
+    flex: 1;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+}
 .section-container{
     gap: 4rem;
     height: 80%;
 }
 
-.about_pic-container{
-    height: 400px;
-    width: 1000px;
-}
-
-#experience {
+#skills {
     position: relative;
   }
   
-  .experience-sub-title {
+  .skills-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
   }
   
-  .experience-details-container {
+  .skills-details-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -281,16 +290,18 @@ section{
   
   .article-container {
     display: flex;
-    text-align: initial;
+    flex: 1;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
+    margin: 2rem;
     justify-content: space-around;
+    width: 100%;
+
   }
   
   article {
     display: flex;
-    width: 10rem;
+    width: 11%;
     justify-content: space-around;
     gap: 0.5rem;
   }
