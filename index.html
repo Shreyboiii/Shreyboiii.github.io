@@ -8,8 +8,31 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo"><a class="home"href="#home">Shreyash Hamal</a></div>
+    <section id="profile">
+      <div class="section__text">
+        <p id="hello"> Hello, I'm</p>
+        <h1 class="title">Shreyash Hamal</h1>
+        <p id ="typer"><span></span></p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/Shreyash-Hamal-Resume.pdf')">
+          Download Resume</button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+          Contact Me</button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/shreyash-hamal/'">
+          <img src="./assets/GitHub.png" alt="My Github Profile" class="icon"
+          onclick="location.href='https://github.com/Shreyboiii'">
+        </div>
+        <div id="view-work">
+          <p>View my work</p>
+          <img class="icon" src="./assets/arrow_down.png" alt="arrow down"
+          onclick="location.href='#about'"></div>
+      </div>
+    </section>
+    <div id ="nav-container"><nav id="desktop-nav">
+      <div class="logo"><a class="home"href="#profile">Shreyash Hamal</a></div>
       <div> <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -19,7 +42,6 @@
     </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Shreyash Hamal</div>
       <div class="hamburger-menu">
       <div class="hamburger-icon" onclick="toggleMenu()">
       </div>
@@ -30,27 +52,8 @@
         <li><a href="#contact" onlick="toggleMenu()">Contact</a></li>
       </div>
     </div>
-    </nav>
-    <section id="profile">
-      <div class="section__text">
-        <p class="section__text__p1"> Hello, I'm</p>
-        <h1 class="title">Shreyash Hamal</h1>
-        <p class="section__text__p2">Aspiring Developer</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open   ('./assets/Shreyash-Hamal-Resume.pdf')">
-          Download Resume</button>
-          <button class="btn btn-color-1" onclick="location.href('./#contact')">
-          Contact Me</button>
-        </div>
-        <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon"
-          onclick="location.href='https://www.linkedin.com/in/shreyash-hamal/'">
-          <img src="./assets/GitHub.png" alt="My Github Profile" class="icon"
-          onclick="location.href='https://github.com/Shreyboiii'">
-        </div>
-      </div>
-    </section>
-    <section id="about">
+    </nav></div>  
+    <section id="about">    
       <p class="section__text__p1">Get to know more</p>
       <h1 class="title">About me</h1>
       <div class="section-container">
@@ -287,17 +290,7 @@
       </div>
     </section>
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Shreyash Hamal. All Rights Reserved.</p>
+       <p>Copyright &#169; 2024 Shreyash Hamal. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
