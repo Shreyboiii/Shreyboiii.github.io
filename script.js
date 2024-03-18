@@ -1,23 +1,14 @@
 const dynamicText = document.querySelector("p span");
-const sentences = ["An Aspiring Developer", "Nice To Meet You"];
+const sentences = ["Aspiring Developer", "Nice To Meet You"];
 let sentenceIndex = 0;
 let charIndex = 0; 
 let isDeleting = false;
 typing();
 
-function toggleMenu(){
-    const menu = document.querySelector(".ham-links");
-    const icon = document.querySelector(".hamburger-icon");
-
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}
-
 function typing(){
     let currentSentence = sentences[sentenceIndex];
     let currentChar = currentSentence.substring(0,charIndex);
-    dynamicText.innerHTML = currentChar;
-    console.log(dynamicText.innerHTML);
+    dynamicText.innerHTML = currentChar; 
 
     if(!isDeleting && charIndex < currentSentence.length) {
         charIndex++;
