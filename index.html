@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <div id="background">
+    </div>
     <section id="profile">
       <div class="section__text">
         <p id="hello"> Hello, I'm</p>
@@ -26,10 +28,9 @@
           onclick="location.href='https://github.com/Shreyboiii'">
         </div>
         <div id="view-work">
-          <a href="#about" class="view">View my work</a>
-          <br>
-          <img id ="view-arrow" class="icon" src="./assets/arrow_down.png" alt="arrow down"
-          onclick="location.href='#about'"></div>
+          <button class="view" onclick="location.href='#about'">View my work &nbsp; <span class = "darr">&darr;</span></button>
+          
+          
       </div>
     </section>
     <div id ="nav-container">
@@ -43,9 +44,7 @@
     </div>
     </nav>
     </div>  
-    <section id="about">
-      <div><img class="icon arrowup" src="./assets/arrow_up.png" alt="arrow up"
-        onclick="location.href='#profile'"></div>    
+    <section id="about" style="padding: 10vh 10rem 0 10rem;">
       <div id ="about-container">
         <div class ="about-titles">
       <p class="section__text__p1">Get to know more</p>
@@ -72,8 +71,6 @@
         </div>
           <div class="skills-details-container">
             <div class="skills-containers">
-
-
                 <div class="article-container">
                   <article>
                     <img
@@ -157,29 +154,22 @@
                   </article>
                   <article>
                     <img
-                      src="./assets/git.png"
+                      src="./assets/mongodb.png"
                       alt="checkmark"
                       class="icon"
                     />
                     <div>
-                      <h3>Git</h3>
+                      <h3>MongoDB</h3>
                     </div>
                   </article>
                 </div>
               </div>
               </div>
               </div>
-            </div>
-          </div>
-          
-      </div>
-      <div><img class="icon arrowdown" src="./assets/arrow_down.png" alt="arrow down"
-        onclick="location.href='#projects'"></div>
-      </div>
+      </div>      
     </section>  
     <section id="projects">
-      <div><img class="icon arrowup" src="./assets/arrow_up.png" alt="arrow up"
-        onclick="location.href='#profile'"></div>
+      <div id="project-container">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="project-details-container">
@@ -233,38 +223,9 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="skills-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow_down.png"
-        alt="Arrow icon"
-        class="icon arrowdown"
-        onclick="location.href='./#contact'"
-      />
+    </div>
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
@@ -287,10 +248,13 @@
           <p><a class="underline" href="https://www.linkedin.com/in/shreyash-hamal/">LinkedIn</a></p>
         </div>
       </div>
+      <div><img class="icon arrowup" src="./assets/arrow_up.png" alt="arrow up"
+        onclick="location.href='#profile'"></div>
     </section>
     <footer>
        <p>Copyright &#169; 2024 Shreyash Hamal. All Rights Reserved.</p>
     </footer>
+    
     <script src="script.js"></script>
   </body>
 </html>

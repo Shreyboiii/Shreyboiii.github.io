@@ -6,9 +6,30 @@
 margin: 0;
 padding: 0;
 }
+
 body{
 font-family: 'Poppins', sans-serif;
 }
+
+#background{
+  width: 100%;
+  height: 100vh;
+  background-size: 400%;
+  position: fixed;
+  background-image: linear-gradient(45deg, #cfd9df, #e2ebf0);
+  z-index: -100000;
+  animation: animate 2s ease infinite alternate;
+}
+
+@keyframes animate{
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}
+
 html{
 scroll-behavior: smooth;
 }
@@ -45,8 +66,8 @@ align-items: center;
 justify-content: center;
 background-color: rgb(255, 255, 255);
 z-index: 100;
-border-bottom: 3px solid black;
-border-top: 1px solid black;
+border-bottom: 1px solid rgb(179, 179, 179);
+box-shadow: 0 4px 4px rgb(170, 170, 170);
 }
 
 a{
@@ -66,9 +87,8 @@ font-size: 2rem;
 
 section{
 display: flex;
-padding-top: 10vh;
+padding: 0 10rem 0 10rem;
 height: 100vh;
-margin: 0 10rem;
 align-items: center;
 justify-content: center;
 box-sizing: border-box;
@@ -113,12 +133,27 @@ font-size: 3rem;
 #typer {
 font-size: 2.5rem;
 }
+
+#view-work button {
+  font: inherit;
+}
+
 .view {
-font-size: 1.2rem;
+  background: none;
+  border-radius: 2rem;
+  padding: 1.5% 5%;
 }
+
 .view:hover {
-font-size: 1.4rem;
+  transition: 200ms ease-in;
+  transform: scale(1.15);
+  cursor: pointer;
 }
+
+.darr{
+  font-size: 1.5rem;
+}
+
 p span {
 position: relative;
 margin: 10px;
@@ -245,15 +280,7 @@ width: 3rem;
 }
 
 .arrowup{
-position: absolute;
-right: -5rem;
-top: 7.5rem;
-}
-
-.arrowdown{
-position: absolute;
-right: -5rem;
-bottom: 2.5rem;
+position: relative;
 }
 
 .card-container{
@@ -289,19 +316,20 @@ font-size: 1.75rem;
 margin-bottom: 2rem;
 }
 
+
 .skills-details-container {
-display: flex;
-justify-content: center;
-flex-direction: column;
-flex: 1;
-}
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+  }
 
 .article-container {
 display: flex;
 flex: 1;
 flex-wrap: wrap;
 flex-direction: row;
-margin: 2rem;
+margin: 2rem 0;
 width: 100%;
 justify-content: space-around;
 }
@@ -322,6 +350,8 @@ cursor: default;
 
 #projects {
 position: relative;
+align-items: start;
+
 }
 
 .color-container {
@@ -361,7 +391,7 @@ border-radius: 2rem;
 border: rgb(53, 53, 53) 0.1rem solid;
 border-color: rgb(163, 163, 163);
 background: (250, 250, 250);
-margin: 2rem auto;
+margin: 2rem 0;
 padding: 0.5rem;
 }
 
@@ -370,7 +400,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 gap: 0.5rem;
-margin: 1rem;
+margin: 1rem 0;
 }
 
 .contact-info-container p {
