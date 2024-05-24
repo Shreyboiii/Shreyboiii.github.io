@@ -3,6 +3,7 @@ const sentences = ["Aspiring Developer", "Nice To Meet You"];
 let sentenceIndex = 0;
 let charIndex = 0; 
 let isDeleting = false;
+
 typing();
 
 function typing(){

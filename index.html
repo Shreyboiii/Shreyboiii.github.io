@@ -1,260 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">  
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shreyash Hamal | Developer</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="./public/styles/style.css" />
+    <link rel="stylesheet" href="./public/styles/mediaqueries.css" />
   </head>
   <body>
-    <div id="background">
-    </div>
-    <section id="profile">
-      <div class="section__text">
-        <p id="hello"> Hello, I'm</p>
-        <h1 class="title">Shreyash Hamal</h1>
-        <p id ="typer"><span></span></p>
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/Shreyash-Hamal-Resume.pdf')">
-          Download Resume</button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
-          Contact Me</button>
-        </div>
-        <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon"
-          onclick="location.href='https://www.linkedin.com/in/shreyash-hamal/'">
-          <img src="./assets/GitHub.png" alt="My Github Profile" class="icon"
-          onclick="location.href='https://github.com/Shreyboiii'">
-        </div>
-        <div id="view-work">
-          <button class="view" onclick="location.href='#about'">View my work &nbsp; <span class = "darr">&darr;</span></button>
-          
-          
-      </div>
-    </section>
-    <div id ="nav-container">
+    <div id="nav-container">
       <nav id="desktop-nav">
-      <div class="logo"><a class="home" href="#profile">Shreyash Hamal</a></div>
-      <div> <ul class="nav-links">
-        <li><a class="underline" href="#about">About</a></li>
-        <li><a class="underline" href="#projects">Projects</a></li>
-        <li><a class="underline" href="#contact">Contact</a></li>
-      </ul>
+           <ul class="nav-links">
+              <li> <div class="logo"><a class="scroll" href="#profile" data-target="profile">Shreyash Hamal</a></div></li>
+           </ul>
+          <div>
+              <ul class="nav-links">
+                  <li><a class="underline scroll" href="#about" data-target="about">About</a></li>
+                  <li><a class="underline scroll" href="#projects" data-target="projects">Projects</a></li>
+                  <li><a class="underline scroll" href="#contact" data-target="contact">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+  </div>
+  <div id="background">
+  </div>
+  <section id="profile">
+    <div class="section__text">
+      <p id="hello"> Hello, I'm</p>
+      <h1 class="title">Shreyash Hamal</h1>
+      <p id ="typer"><span></span></p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./public/files/Shreyash-Hamal-Resume.pdf')">
+        Download Resume</button>
+      <button class="btn btn-color-2 scroll" data-target="contact">Contact Me</button>
+      </div>
+      <div id="socials-container">
+        <img src="./public/images/icons/linkedin.png" alt="My Linkedin Profile" class="icon"
+        onclick="location.href='https://www.linkedin.com/in/shreyash-hamal/'">
+        <img src="./public/images/icons/github.png" alt="My Github Profile" class="icon"
+        onclick="location.href='https://github.com/Shreyboiii'">
+      </div>
+      <div id="view-work">
+        <button class="view scroll" data-target='about'>Learn More About Me</button>
     </div>
-    </nav>
-    </div>  
-    <section id="about" style="padding: 10vh 10rem 0 10rem;">
-      <div id ="about-container">
-        <div class ="about-titles">
-      <p class="section__text__p1">Get to know more</p>
-      <h1 class="title">About me</h1>
-    </div>
+  </section>
+  <section id="about">
+    <div id="about-container">
+      <div class="about-titles">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About me</h1>
+      </div>
       <div class="section-container">
-      <div class="about-deails-container">
-        <div class="about-containers">
-          <div class="card-container">
-            <img class="about-icon" src="./assets/exp.png" alt="checkmark">
-            <h3>Experience</h3>
-            <p>3 months Web Development</p>
-            <p>1 month IT support</p>
-          </div>
-          <div class="card-container">
-            <img class="about-icon" src="./assets/exp.png" alt="education icon">
-            <h3>Education</h3>
-            <p>Pursuing BS in Computer Science</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates totam praesentium nihil blanditiis aperiam fuga, ea dolorum possimus minus odio officia quaerat et quis sequi quo ad ipsum est excepturi ex necessitatibus inventore tenetur harum? Cum sapiente placeat laborum consectetur cupiditate architecto cumque totam autem sunt! Enim, dolore illum?</p>
-        </div>
-        </div>
-          <div class="skills-details-container">
-            <div class="skills-containers">
-                <div class="article-container">
-                  <article>
-                    <img
-                      src="./assets/html.png"
-                      alt="checkmark"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>HTML</h3>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/css.png"
-                      alt="checkmark"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>CSS</h3>
-                    </div>
-                  </article>
-                </div>
-
-
-                <div class="article-container">
-                  <article>
-                    <img
-                      src="./assets/go.png"
-                      alt="checkmark"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>Go</h3>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/js.png"
-                      alt="checkmark"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>JavaScript</h3>
-                    </div>
-                  </article>
-                
-                  <article>
-                    <img
-                      src="./assets/react.png"
-                      alt="checkmark"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>React JS</h3>
-                    </div>
-                  </article>
-                  
-                  <article>
-                    <img
-                      src="./assets/node.png"
-                      alt="checkmark"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>Node JS</h3>
-                    </div>
-                  </article>
-                </div>
-
-
-                <div class="article-container">
-                  <article>
-                    <img
-                      src="./assets/express.png"
-                      alt="checkmark"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>Express JS</h3>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/mongodb.png"
-                      alt="checkmark"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>MongoDB</h3>
-                    </div>
-                  </article>
-                </div>
-              </div>
-              </div>
-              </div>
-      </div>      
-    </section>  
-    <section id="projects">
-      <div id="project-container">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="project-details-container">
-        <div class="project-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
+        <div class="about-deails-container">
+          <div class="about-containers">
+            <div class="card-container">
+              <img class="about-icon" src="./public/images/icons/exp.png" alt="checkmark" />
+              <h3>Experience</h3>
+              <p>3 months Web Development</p>
+              <p>1 month IT support</p>
+            </div>
+            <div class="card-container">
               <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
+                class="about-icon"
+                src="./public/images/icons/exp.png"
+                alt="education icon"
               />
-            </div>
-            <h2 class="skills-sub-title project-title">Web Crawler In GO </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              <h3>Education</h3>
+              <p>Pursuing BS in Computer Science</p>
             </div>
           </div>
-          
-          <div class="details-container color-container">
+          <div class="text-container">
+            <p>
+             Ever since I was a kid there has been no end to my curiosity. 
+             With technology constantly evolving, there's always something new to learn and discover 
+             which made me realize that this is the industry for me. Whether it's troubleshooting a stubborn bug 
+             or optimizing an algorithm for efficiency, I'm all about tackling problems head-on and honing my skills 
+             along the way. Outisde of the cs world, I like to unwind with a bit of gaming, eat out, watch shows/movies 
+             and workout.
+            </p>
+          </div>
+        </div>
+        <div class="skills-details-container">
+          <div class="skills-containers">
             <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+              <article>
+                <img src="./public/images/icons/html.png" alt="html" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./public/images/icons/css.png" alt="css" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
             </div>
-            <h2 class="skills-sub-title project-title">Currently Ongoing...</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+            <div class="article-container">
+              <article>
+                <img src="./public/images/icons/go.png" alt="go" class="icon" />
+                <div>
+                  <h3>Go</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./public/images/icons/js.png" alt="js" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./public/images/icons/bootstrap.png" alt="bootstrap" class="icon" />
+                <div>
+                  <h3>Bootstrap</h3>
+                </div>
+              </article>
+  
+              <article>
+                <img src="./public/images/icons/node.png" alt="node" class="icon" />
+                <div>
+                  <h3>Node JS</h3>
+                </div>
+              </article>
+            </div>
+            <div class="article-container">
+              <article>
+                <img src="./public/images/icons/express.png" alt="express" class="icon" />
+                <div>
+                  <h3>Express JS</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./public/images/icons/mongodb.png" alt="mongodb" class="icon" />
+                <div>
+                  <h3>MongoDB</h3>
+                </div>
+              </article>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </section>
+  <div>
+    <section id="projects">
+      <div id="project-container" style="position: relative;">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="carousel">
+        <button id="left-button" class="btn btn-nav">&larr;</button>
+        <div class="project-details-container">
+          <div class="project-containers">
+            <div class="details-container color-container";>
+              <div class="article-container">
+                <img src="./public/images/project1.png" alt="Project 1" class="project-img" />
+              </div>
+              <h2 class="skills-sub-title project-title">Web Crawler In GO</h2>
+          
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Shreyboiii/Go-Web-Crawler-'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Shreyboiii/Go-Web-Crawler-'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./public/images/soon.jpg" alt="Project 2" class="project-img" />
+              </div>
+              <h2 class="skills-sub-title project-title">Currently Ongoing...</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href=''">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href=''">Live Demo</button>
+              </div>
+            </div>
+            
+            <!-- Add more projects here -->
+          </div>
+        </div>
+         <button id="right-button" class="btn btn-nav">&rarr;</button>
+         </div>
+      </div>
     </section>
+  </div>
+  <div>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
-            src="./assets/email.png"
+            src="./public/images/icons/email.png"
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a class="underline" href="mailto:examplemail@gmail.com">shreyash.hamal@gmail.com</a></p>
+          <p>
+            <a class="underline" href="mailto:examplemail@gmail.com"
+              >Send me an Email</a
+            >
+          </p>
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/linkedin.png"
+            src="./public/images/icons/linkedin.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a class="underline" href="https://www.linkedin.com/in/shreyash-hamal/">LinkedIn</a></p>
+          <p>
+            <a
+              class="underline"
+              href="https://www.linkedin.com/in/shreyash-hamal/"
+              >LinkedIn</a
+            >
+          </p>
         </div>
       </div>
-      <div><img class="icon arrowup" src="./assets/arrow_up.png" alt="arrow up"
-        onclick="location.href='#profile'"></div>
-    </section>
-    <footer>
-       <p>Copyright &#169; 2024 Shreyash Hamal. All Rights Reserved.</p>
+      </section>
+      </div>
+      <footer>
+        <p>Copyright &#169; <span id="current-date"></span>/<span id="current-month"></span>/<span id="current-year"></span> Shreyash Hamal. All Rights Reserved.</p>
     </footer>
-    
-    <script src="script.js"></script>
+    <script src="./public/scripts/typer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./public/scripts/script.js"></script>
   </body>
 </html>
