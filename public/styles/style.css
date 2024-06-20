@@ -69,16 +69,15 @@ font-size: 2rem;
 
 section{
 display: flex;
-padding: 2rem 10rem 0 10rem;
-height: 100vh;
-width: 100vw;
+padding-top: 8vh;
+min-height: 100vh;
+max-width: 100vw;
+max-height: fit-content;
 align-items: center;
 justify-content: center;
-box-sizing: border-box;
-min-height: fit-content;
 }
 
-.section-container,#profile{
+.about-section-container,#profile{
 display: flex;
 } 
 
@@ -273,7 +272,7 @@ text-align: center;
   
   .card-container{
   display: flex;
-  height: 100%;
+  min-height: 100%;
   padding: 1.5rem;
   flex-direction: column;
   flex: 1;
@@ -348,6 +347,7 @@ text-align: center;
 }
 .skills-sub-title, .project-title {
   align-self: center;
+  text-align: center;
 }
 .color-container {
   border-color: rgb(163, 163, 163);
@@ -393,8 +393,7 @@ text-align: center;
 
 .project-details-container {
   position: relative;
-  width: 80%; /* Make the project details container take 80% of the width */
-  margin: 0 auto; /* Center the project details container */
+  width: fit-content; /* Make the project details container take 80% of the width */
 }
 
 .project-containers {
@@ -405,7 +404,14 @@ text-align: center;
 .carousel {
   display: flex;
   flex-direction: row;
+  max-width: 100%;
+  justify-content: center;
 }
+
+#projects .article-container img{
+  width: 300px;
+}
+
 
 /* CONTACT */
 
