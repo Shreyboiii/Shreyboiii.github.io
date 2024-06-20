@@ -68,8 +68,8 @@ font-size: 2rem;
 }
 
 section{
+margin-top: 10vh;
 display: flex;
-padding-top: 8vh;
 min-height: 100vh;
 max-width: 100vw;
 max-height: fit-content;
@@ -340,9 +340,10 @@ text-align: center;
   position: relative;
   display: flex;
   align-items: start;
+  min-height: 100vh;
 }
 #project-container{
-  height: 100vh;
+  height: fit-content;
   width: 90vw;
 }
 .skills-sub-title, .project-title {
@@ -392,7 +393,7 @@ text-align: center;
 }
 
 .project-details-container {
-  position: relative;
+  /* position: relative; */
   width: fit-content; /* Make the project details container take 80% of the width */
 }
 

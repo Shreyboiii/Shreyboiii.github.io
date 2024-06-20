@@ -1,4 +1,10 @@
 @media screen and (max-width: 1200px) {
+  
+  section{
+    max-height: fit-content;
+    min-height: fit-content;
+    height: fit-content;
+  }
   .nav-links{
     gap:1rem;
     list-style: none;
@@ -21,15 +27,7 @@
     font-size: 1rem;
   }
   #typer span::after {
-      content: "";
-      height: 18px;
-      width: 2px;
-      position: absolute;
-      top: 50%;
-      right: -8px;
-      background: rgb(85, 85, 85);
-      transform: translateY(-45%);
-      animation: blink 0.7s infinite;
+      display: none;
   }
 
   #about-container .section-container {
@@ -47,7 +45,7 @@
   .card-container{
     padding: 0.4rem;
     min-height: 100%;
-  }
+  } 
 
   .project-img {
     border-radius: 2rem;
@@ -65,5 +63,18 @@
 
   .details-container {
     width: 100%;
+  }  
+
+  #projects {
+    max-height: fit-content;
+    min-height: fit-content;
+  }
+
+  
+
+  #contact {
+    max-height: fit-content;
+    min-height: fit-content;
+    height: fit-content;
   }
 }

@@ -1,13 +1,14 @@
 $(document).ready(function() {
     $('.scroll').on('click', function(event) {
-        event.preventDefault();
-        var targetId = $(this).data('target');
-        var targetElement = $('#' + targetId);
-        
-        if (targetElement.length) {
-            $('html, body').animate({
-                scrollTop: targetElement.offset().top
-            }, 'smooth');
+      event.preventDefault();
+      var targetId = $(this).data('target');
+      var targetElement = $('#' + targetId);
+      var offset = 10 * $(window).height() / 100; // Calculate 10vh
+
+      if (targetElement.length) {
+          $('html, body').animate({
+              scrollTop: targetElement.offset().top - offset
+          }, 'smooth');
         }
     });
     var projects = $('.details-container');
