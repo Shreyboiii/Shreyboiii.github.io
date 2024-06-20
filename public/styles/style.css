@@ -354,8 +354,9 @@ text-align: center;
   
 /* PROJECTS SECTION */
 
-#projects {
+#projects{
   position: relative;
+  display: flex;
   align-items: start;
 }
 
