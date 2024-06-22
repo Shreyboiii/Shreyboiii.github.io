@@ -8,315 +8,346 @@
     <link rel="stylesheet" href="./public/styles/mediaqueries.css" />
   </head>
   <body>
-    <div id="nav-container">
-      <nav id="desktop-nav">
-        <ul class="nav-links">
-          <li>
-            <div class="logo">
-              <a class="scroll" href="#profile" data-target="profile"
-                >Shreyash Hamal</a
-              >
-            </div>
-          </li>
-        </ul>
-        <div>
+    <div id="background">
+      <div id="nav-container">
+        <nav id="desktop-nav">
           <ul class="nav-links">
             <li>
-              <a class="underline scroll" href="#about" data-target="about"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                class="underline scroll"
-                href="#projects"
-                data-target="projects"
-                >Projects</a
-              >
-            </li>
-            <li>
-              <a class="underline scroll" href="#contact" data-target="contact"
-                >Contact</a
-              >
+              <div class="logo">
+                <a class="scroll" href="#profile" data-target="profile"
+                  >Shreyash Hamal</a
+                >
+              </div>
             </li>
           </ul>
+          <div>
+            <ul class="nav-links">
+              <li>
+                <a class="underline scroll" href="#about" data-target="about"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="underline scroll"
+                  href="#projects"
+                  data-target="projects"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  class="underline scroll"
+                  href="#contact"
+                  data-target="contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <section id="profile">
+        <div class="section__text">
+          <p id="hello">Hello, I'm</p>
+          <h1 class="title">Shreyash Hamal</h1>
+          <p id="typer"><span></span></p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./public/files/Shreyash-Hamal-Resume.pdf')"
+            >
+              Download Resume
+            </button>
+            <button class="btn btn-color-2 scroll" data-target="contact">
+              Contact Me
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./public/images/icons/linkedin.png"
+              alt="My Linkedin Profile"
+              class="icon"
+              onclick="window.open('https://www.linkedin.com/in/shreyash-hamal/','_blank')"
+            />
+            <img
+              src="./public/images/icons/github.png"
+              alt="My Github Profile"
+              class="icon"
+              onclick="window.open('https://github.com/Shreyboiii','_blank')"
+            />
+          </div>
+          <div id="view-work">
+            <button class="view scroll" data-target="about">
+              Learn More About Me
+            </button>
+          </div>
         </div>
-      </nav>
+      </section>
+      <section id="about">
+        <div id="about-container">
+          <div class="about-titles">
+            <p class="section__text__p1">Get to know more</p>
+            <h1 class="title">About me</h1>
+          </div>
+          <div class="about-section-container">
+            <div class="about-deails-container">
+              <div class="about-containers">
+                <div class="card-container">
+                  <img
+                    class="about-icon"
+                    src="./public/images/icons/exp.png"
+                    alt="checkmark"
+                  />
+                  <h3>Experience</h3>
+                  <p>3 months Web Development</p>
+                  <p>1 month IT support</p>
+                </div>
+                <div class="card-container">
+                  <img
+                    class="about-icon"
+                    src="./public/images/icons/exp.png"
+                    alt="education icon"
+                  />
+                  <h3>Education</h3>
+                  <p>Pursuing BS in Computer Science</p>
+                </div>
+              </div>
+              <div class="text-container">
+                <p>
+                  Ever since I was a kid there has been no end to my curiosity.
+                  With technology constantly evolving, there's always something
+                  new to learn and discover which made me realize that this is
+                  the industry for me. Whether it's troubleshooting a stubborn
+                  bug or optimizing an algorithm for efficiency, I'm all about
+                  tackling problems head-on and honing my skills along the way.
+                  Outisde of the cs world, I like to unwind with a bit of
+                  gaming, eat out, watch shows/movies and workout.
+                </p>
+              </div>
+            </div>
+            <div class="skills-details-container">
+              <div class="skills-containers">
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="./public/images/icons/html.png"
+                      alt="html"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>HTML</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./public/images/icons/css.png"
+                      alt="css"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>CSS</h3>
+                    </div>
+                  </article>
+                </div>
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="./public/images/icons/go.png"
+                      alt="go"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Go</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./public/images/icons/js.png"
+                      alt="js"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>JavaScript</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./public/images/icons/bootstrap.png"
+                      alt="bootstrap"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Bootstrap</h3>
+                    </div>
+                  </article>
+
+                  <article>
+                    <img
+                      src="./public/images/icons/node.png"
+                      alt="node"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Node JS</h3>
+                    </div>
+                  </article>
+                </div>
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="./public/images/icons/express.png"
+                      alt="express"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Express JS</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./public/images/icons/mongodb.png"
+                      alt="mongodb"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>MongoDB</h3>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div id="project-container">
+          <p class="section__text__p1">Browse My Recent</p>
+          <h1 class="title">Projects</h1>
+          <div class="carousel">
+            <button id="left-button" class="btn btn-nav">&larr;</button>
+            <div class="project-details-container">
+              <div class="project-containers">
+                <div class="details-container color-container" ;>
+                  <div class="article-container">
+                    <img
+                      src="./public/images/projects/go-crawler.png"
+                      alt="Project 1"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="skills-sub-title project-title">
+                    Web Crawler In GO
+                  </h2>
+
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://github.com/Shreyboiii/Go-Web-Crawler-','_blank')"
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="showAlert()"
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./public/images/projects/portfolio-website.png"
+                      alt="Project 2"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="skills-sub-title project-title">
+                    Portfolio Website 2.0
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open='https://github.com/Shreyboiii/Portfolio-Webiste-2.0'"
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="showAlert()"
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./public/images/soon.jpg"
+                      alt="Project 2"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="skills-sub-title project-title">
+                    Currently Ongoing...
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="showAlert()"
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="showAlert()"
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+                <!-- Add more projects here -->
+              </div>
+            </div>
+            <button id="right-button" class="btn btn-nav">&rarr;</button>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./public/images/icons/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p>
+              <a class="underline" href="mailto:examplemail@gmail.com"
+                >Send me an Email</a
+              >
+            </p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./public/images/icons/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p>
+              <a
+                class="underline"
+                href="https://www.linkedin.com/in/shreyash-hamal/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
-    <section id="profile">
-      <div class="section__text">
-        <p id="hello">Hello, I'm</p>
-        <h1 class="title">Shreyash Hamal</h1>
-        <p id="typer"><span></span></p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./public/files/Shreyash-Hamal-Resume.pdf')"
-          >
-            Download Resume
-          </button>
-          <button class="btn btn-color-2 scroll" data-target="contact">
-            Contact Me
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./public/images/icons/linkedin.png"
-            alt="My Linkedin Profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/shreyash-hamal/'"
-          />
-          <img
-            src="./public/images/icons/github.png"
-            alt="My Github Profile"
-            class="icon"
-            onclick="location.href='https://github.com/Shreyboiii'"
-          />
-        </div>
-        <div id="view-work">
-          <button class="view scroll" data-target="about">
-            Learn More About Me
-          </button>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <div id="about-container">
-        <div class="about-titles">
-          <p class="section__text__p1">Get to know more</p>
-          <h1 class="title">About me</h1>
-        </div>
-        <div class="about-section-container">
-          <div class="about-deails-container">
-            <div class="about-containers">
-              <div class="card-container">
-                <img
-                  class="about-icon"
-                  src="./public/images/icons/exp.png"
-                  alt="checkmark"
-                />
-                <h3>Experience</h3>
-                <p>3 months Web Development</p>
-                <p>1 month IT support</p>
-              </div>
-              <div class="card-container">
-                <img
-                  class="about-icon"
-                  src="./public/images/icons/exp.png"
-                  alt="education icon"
-                />
-                <h3>Education</h3>
-                <p>Pursuing BS in Computer Science</p>
-              </div>
-            </div>
-            <div class="text-container">
-              <p>
-                Ever since I was a kid there has been no end to my curiosity.
-                With technology constantly evolving, there's always something
-                new to learn and discover which made me realize that this is the
-                industry for me. Whether it's troubleshooting a stubborn bug or
-                optimizing an algorithm for efficiency, I'm all about tackling
-                problems head-on and honing my skills along the way. Outisde of
-                the cs world, I like to unwind with a bit of gaming, eat out,
-                watch shows/movies and workout.
-              </p>
-            </div>
-          </div>
-          <div class="skills-details-container">
-            <div class="skills-containers">
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./public/images/icons/html.png"
-                    alt="html"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>HTML</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./public/images/icons/css.png"
-                    alt="css"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>CSS</h3>
-                  </div>
-                </article>
-              </div>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./public/images/icons/go.png"
-                    alt="go"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Go</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./public/images/icons/js.png"
-                    alt="js"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>JavaScript</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./public/images/icons/bootstrap.png"
-                    alt="bootstrap"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Bootstrap</h3>
-                  </div>
-                </article>
-
-                <article>
-                  <img
-                    src="./public/images/icons/node.png"
-                    alt="node"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Node JS</h3>
-                  </div>
-                </article>
-              </div>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./public/images/icons/express.png"
-                    alt="express"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Express JS</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./public/images/icons/mongodb.png"
-                    alt="mongodb"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>MongoDB</h3>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects">
-      <div id="project-container">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="carousel">
-          <button id="left-button" class="btn btn-nav">&larr;</button>
-          <div class="project-details-container">
-            <div class="project-containers">
-              <div class="details-container color-container" ;>
-                <div class="article-container">
-                  <img
-                    src="./public/images/project1.png"
-                    alt="Project 1"
-                    class="project-img"
-                  />
-                </div>
-                <h2 class="skills-sub-title project-title">
-                  Web Crawler In GO
-                </h2>
-
-                <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/Shreyboiii/Go-Web-Crawler-'"
-                  >
-                    Github
-                  </button>
-                  <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/Shreyboiii/Go-Web-Crawler-'"
-                  >
-                    Live Demo
-                  </button>
-                </div>
-              </div>
-              <div class="details-container color-container">
-                <div class="article-container">
-                  <img
-                    src="./public/images/soon.jpg"
-                    alt="Project 2"
-                    class="project-img"
-                  />
-                </div>
-                <h2 class="skills-sub-title project-title">
-                  Currently Ongoing...
-                </h2>
-                <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href=''"
-                  >
-                    Github
-                  </button>
-                  <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href=''"
-                  >
-                    Live Demo
-                  </button>
-                </div>
-              </div>
-
-              <!-- Add more projects here -->
-            </div>
-          </div>
-          <button id="right-button" class="btn btn-nav">&rarr;</button>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./public/images/icons/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>
-            <a class="underline" href="mailto:examplemail@gmail.com"
-              >Send me an Email</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./public/images/icons/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a
-              class="underline"
-              href="https://www.linkedin.com/in/shreyash-hamal/"
-              >LinkedIn</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
     <footer>
       <p>
         Copyright &#169; <span id="current-date"></span>/<span
