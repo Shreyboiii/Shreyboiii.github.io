@@ -3,14 +3,11 @@ $(document).ready(function() {
       event.preventDefault();
       let targetId = $(this).data('target');
       let targetElement = $('#' + targetId);
-      let offset = 10 * $(window).height() / 100; // Calculate 10vh
-
-      if (targetElement.length) {
-          $('html, body').animate({
-              scrollTop: targetElement.offset().top - offset
-          }, 'smooth');
-        }
+      $('html, body').animate({
+          scrollTop: targetElement.offset().top
+      }, 'smooth');
     });
+
     let projects = $('.details-container');
     let currentIndex = 0;
 
@@ -32,7 +29,6 @@ $(document).ready(function() {
       projects.eq(currentIndex).show();
     });
 
-    // Prevent buttons from disappearing
     $('.btn-nav').mousedown(function(event) {
       event.preventDefault();
     });
