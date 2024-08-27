@@ -16,7 +16,7 @@ $(document).ready(function() {
 
     */
 
-    const projects = ['web_crawler.html', 'riscv_emu.html', 'pong_game.html', 'pipeline.html', 'port_website2.html'];
+    const projects = ['creatoverse.html','web_crawler.html', 'riscv_emu.html', 'pong_game.html', 'pipeline.html', 'port_website2.html'];
     let currentIndex = 0;
 
     const loadProjects = async () => {
