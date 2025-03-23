@@ -13,6 +13,9 @@
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const code = urlParams.get('code');
+        const clientId = "1153807892876290";
+        const clientSecret = "9b84f2f7aa39bd5e6618ab014fd13365";
+        const redirectUri = "https://shreyboiii.github.io/igdata";
 
         if (code) {
             document.getElementById('code').innerText = "Code: " + code;
@@ -20,11 +23,11 @@
             fetch('https://api.instagram.com/oauth/access_token', {
                 method: 'POST',
                 body: new URLSearchParams({
-                    client_id: "1153807892876290",
-                    client_secret: "9b84f2f7aa39bd5e6618ab014fd13365",
+                    client_id: clientId,
+                    client_secret: clientSecret,
                     code: code,
                     grant_type: 'authorization_code',
-                    redirect_uri: "https://shreyboiii.github.io/igdata"
+                    redirect_uri: redirectUri
                 })
             }).then(response => response.json())
                 .then(data => {
