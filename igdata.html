@@ -8,21 +8,25 @@
     <div id="code"></div>
 
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const code = urlParams.get('code');
+        function getCodeAndSend() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const code = urlParams.get('code');
 
-        if (code) {
-            document.getElementById('code').innerText = "Code: " + code;
+            if (code) {
+                document.getElementById('code').innerText = "Code: " + code;
 
-            fetch('http://localhost:3000/instagram-token', {
-                method: 'POST',
-                body: JSON.stringify({ code: code })
-            })
-            .then(response => response.json())
-            .then(data => console.log(data));
-        } else {
-            document.getElementById('code').innerText = 'No code found.';
+                fetch('http://localhost:3000/instagram-token', {
+                    method: 'POST',
+                    body: JSON.stringify({ code: code })
+                })
+                .then(response => response.json())
+                .then(data => console.log(data));
+            } else {
+                document.getElementById('code').innerText = 'No code found.';
+            }
         }
+
+        window.onload = getCodeAndSend;
     </script>
 </body>
 </html>
