@@ -1,5 +1,5 @@
-const express = require('express');
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
+import express from 'express';
 const app = express();
 
 app.use(express.json());
