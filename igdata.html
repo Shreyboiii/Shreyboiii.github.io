@@ -13,9 +13,6 @@
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const code = urlParams.get('code');
-        const clientId = "1153807892876290";
-        const clientSecret = "9b84f2f7aa39bd5e6618ab014fd13365";
-        const redirectUri = "https://shreyboiii.github.io/igdata";
 
         if (code) {
             document.getElementById('code').innerText = "Code: " + code;
@@ -23,11 +20,11 @@
             fetch('https://api.instagram.com/oauth/access_token', {
                 method: 'POST',
                 body: new URLSearchParams({
-                    client_id: clientId,
-                    client_secret: clientSecret,
+                    client_id: "1153807892876290",
+                    client_secret: "9b84f2f7aa39bd5e6618ab014fd13365",
                     code: code,
                     grant_type: 'authorization_code',
-                    redirect_uri: redirectUri
+                    redirect_uri: "https://shreyboiii.github.io/igdata"
                 })
             }).then(response => response.json())
                 .then(data => {
@@ -35,7 +32,7 @@
                         const shortLivedToken = data.access_token;
                         document.getElementById('shortLivedToken').innerText = "Short Lived Token: " + shortLivedToken;
 
-                        fetch('https://graph.instagram.com/access_token?grant_type=ig_exchange_token&client_secret=' + clientSecret + '&access_token=' + shortLivedToken, {
+                        fetch('https://graph.instagram.com/access_token?grant_type=ig_exchange_token&client_secret=9b84f2f7aa39bd5e6618ab014fd13365&access_token=' + shortLivedToken, {
                             method: 'GET',
                         }).then(response => response.json())
                             .then(data => {
