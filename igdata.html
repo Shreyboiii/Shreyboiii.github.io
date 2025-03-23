@@ -14,10 +14,12 @@
 
             if (code) {
                 document.getElementById('code').innerText = "Code: " + code;
+                const body = JSON.stringify({ code: code });
+                console.log('Sending body to backend:', body);
 
                 fetch('http://localhost:3000/instagram-token', {
                     method: 'POST',
-                    body: JSON.stringify({ code: code })
+                    body: body
                 })
                 .then(response => response.json())
                 .then(data => console.log(data));
