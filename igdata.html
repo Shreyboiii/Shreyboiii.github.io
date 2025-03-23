@@ -6,6 +6,7 @@
 <body>
     <h1>Instagram Code</h1>
     <div id="code"></div>
+    <div id="shortLivedToken"></div>
     <div id="token"></div>
     <div id="expiry"></div>
 
@@ -32,13 +33,14 @@
                 .then(data => {
                     if (data.access_token) {
                         const shortLivedToken = data.access_token;
+                        document.getElementById('shortLivedToken').innerText = "Short Lived Token: " + shortLivedToken;
 
                         fetch('https://graph.instagram.com/access_token?grant_type=ig_exchange_token&client_secret=' + clientSecret + '&access_token=' + shortLivedToken, {
                             method: 'GET',
                         }).then(response => response.json())
                             .then(data => {
                                 if (data.access_token) {
-                                    document.getElementById('token').innerText = "Token: " + data.access_token;
+                                    document.getElementById('token').innerText = "Long Lived Token: " + data.access_token;
                                     document.getElementById('expiry').innerText = "Expires in: " + data.expires_in + " seconds";
                                 } else {
                                     document.getElementById('token').innerText = "Error getting long-lived token: " + JSON.stringify(data);
