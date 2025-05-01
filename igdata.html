@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>Instagram Code</title>
+    <script>
+      window.BACKEND_URL = "http://localhost:3000";
+    </script>
   </head>
   <body>
     <h1>Instagram Code</h1>
@@ -14,15 +17,13 @@
 
         if (code) {
           document.getElementById("code").innerText = "Code: " + code;
-          const body = JSON.stringify({ code: code });
-          console.log("Sending body to backend:", body);
+          const formData = new FormData();
+          formData.append("code", code);
+          console.log("Sending code to backend:", code);
 
           fetch(window.BACKEND_URL + "/instagram-token", {
             method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: body,
+            body: formData,
           })
             .then((response) => response.json())
             .then((data) => console.log(data));
