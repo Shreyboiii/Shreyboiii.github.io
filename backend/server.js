@@ -4,8 +4,10 @@ import { URLSearchParams } from 'url';
 import dotenv from 'dotenv';
 dotenv.config();
 const app = express();
+import expressFormidable from 'express-formidable';
 
 app.use(express.json());
+app.use(expressFormidable());
 
 app.options('/instagram-token', (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', 'https://shreyboiii.github.io');
